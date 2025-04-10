@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #edefee;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 24px;
+    color: #4b5f58;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.promo {
+    background-image: url('../assets/img.png');
+    background-size: cover;
+    background-position: 0 68%;
+    position: relative;
+    color: #fff;
+    text-align: left;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.promo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.promo > * {
+    position: relative;
+    z-index: 2;
+}
+.promo h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.promo p {
+    font-size: 16px;
+    max-width: 600px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f4e5d6;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 32%;
+    text-align: center;
+
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.card ul {
+    list-style: none;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.card ul li {
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    border-bottom: 1px solid #333;
+    padding-bottom: 2px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: #555;
+    border-bottom: 1px solid #555;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+.footer-logo img {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+}
+
+footer p {
+    font-size: 14px;
+    color: #666;
+}
