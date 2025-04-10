@@ -55,7 +55,7 @@ nav ul li a:hover {
 }
 
 .promo {
-    background-image: url('../assets/img.png');
+    background-image: url('https://raw.githubusercontent.com/Maxym5630/lemon_html/refs/heads/main/assets/img.png');
     background-size: cover;
     background-position: 0 68%;
     position: relative;
